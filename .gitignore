@@ -1,0 +1,22 @@
+## Visual Studio and .NET Build Artifacts
+.vs/
+[Bb]in/
+[Oo]bj/
+[Pp]ackages/
+TestResults/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.cache
+
+## Roslyn and temporary files
+*.tmp
+*.log
+_ReSharper*/
+*.DotSettings.user
+
+## OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini

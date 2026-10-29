@@ -1,0 +1,216 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ShoppingSite_mini.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>GamesHopper</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 564px;
+            height: 92px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!-- Header / Banner Main Start -->
+        <div class="banner_bg_main">
+            
+            <!-- Top Utility Bar -->
+            <div class="container">
+                <div class="header_section_top">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="custom_menu">
+                                <ul>
+                                    <li><a href="UserHome.aspx">Home</a></li>
+                                    <li><a href="User_Cart.aspx">My Cart</a></li>
+                                    <li><a href="View_bill.aspx">My Bill</a></li>
+                                    <li><a href="Feedback.aspx">Feedback</a></li>
+                                    <li><a href="Main_Login.aspx">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo Section -->
+            <div class="logo_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="logo text-center">
+                                <a href="UserHome.aspx"><img src="images/logo.png" alt="GamesHopper Logo" style="max-height: 45px; width: auto; object-fit: contain;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Navigation Bar -->
+            <div class="header_section">
+                <div class="container">
+                    <div class="containt_main">
+                        
+                        <!-- Side Drawer Menu -->
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="UserHome.aspx">Home</a>
+                            <a href="User_Cart.aspx">My Cart</a>
+                            <a href="View_bill.aspx">View Bill</a>
+                            <a href="Feedback.aspx">Product Feedback</a>
+                            <a href="Main_Login.aspx">Logout</a>
+                        </div>
+                        <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png" alt="Menu Toggle"></span>
+
+                        <!-- Search Bar -->
+                        <div class="main">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search gaming products, consoles...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color: #f26522;">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Menu (Cart & User Home) -->
+                        <div class="header_box">
+                            <div class="login_menu">
+                                <ul>
+                                    <li>
+                                        <a href="User_Cart.aspx">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="padding_10">Cart</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="UserHome.aspx">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <span class="padding_10">Home</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner Hero Section -->
+            <div class="banner_section layout_padding">
+                <div class="container">
+                    <div id="my_slider" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h1 class="banner_taital">Next-Gen Gaming <br>At Your Fingertips</h1>
+                                        <div class="buynow_bt"><a href="UserHome.aspx">Shop Now</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h1 class="banner_taital">Premium Consoles <br>& Accessories</h1>
+                                        <div class="buynow_bt"><a href="UserHome.aspx">Explore</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Header / Banner Main End -->
+
+        <!-- Dynamic Body Content -->
+        <div style="min-height: 450px; padding: 20px 0;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer Section Start -->
+        <div class="footer_section layout_padding">
+            <div class="container">
+                <div class="footer_logo text-center">
+                    <a href="UserHome.aspx"><img src="images/footer-logo.png" alt="Footer Logo" style="max-height: 45px; width: auto; object-fit: contain;"></a>
+                </div>
+                <div class="footer_menu">
+                    <ul>
+                        <li><a href="UserHome.aspx">Store Home</a></li>
+                        <li><a href="User_Cart.aspx">Shopping Cart</a></li>
+                        <li><a href="View_bill.aspx">Invoices</a></li>
+                        <li><a href="Feedback.aspx">Product Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="location_main">Customer Support: <a href="#">support@gameshopper.com</a></div>
+            </div>
+        </div>
+        <!-- Footer Section End -->
+
+        <!-- Copyright Section -->
+        <div class="copyright_section">
+            <div class="container">
+                <p class="copyright_text">© <%= DateTime.Now.Year %> GamesHopper. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.0.0.min.js"></script>
+        <script src="js/plugin.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+    </form>
+</body>
+</html>
